@@ -267,10 +267,10 @@ header {
 #header_main {
   width: 100%;
   height: 77px; }
-  #header_main a {
+  #header_main a.logo {
     display: inline-block;
     float: left; }
-    #header_main a h1 {
+    #header_main a.logo h1 {
       width: 425px;
       height: 77px;
       text-indent: -1000px;

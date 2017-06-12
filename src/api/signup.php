@@ -6,7 +6,7 @@
 	$password = isset($_GET['password']) ? $_GET['password'] : '';
 
 	// SQL语句
-	$sql = "select username from userimg";
+	$sql = "select username from usermsg";
 
 	// 获取查询结果
 	$res = $conn->query($sql);
@@ -35,7 +35,7 @@
 		// md5加密
 		$password = md5($password);
 
-		$sql = "insert into userimg	(username,password) values('$username','$password')";
+		$sql = "insert into usermsg	(username,password) values('$username','$password')";
 
 		// 获取查询结果
 		$res = $conn->query($sql);

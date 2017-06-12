@@ -10,7 +10,7 @@
 	// print_r($arr);
 
 	// SQL语句
-	$sql = "select username,password from userimg";
+	$sql = "select username,password from usermsg";
 
 	// 获取查询结果
 	$res = $conn->query($sql);
