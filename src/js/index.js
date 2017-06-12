@@ -3,9 +3,9 @@
 		
 		// 轮播图
 		$('.carousel').TTCarousel({
-			width:900,
+			width:1190,
 			height:500,
-			imgs:['images/timg1.jpg','images/timg2.jpg','images/timg.jpg']
+			imgs:['images/lbt1.jpg','images/lbt2.jpg','images/lbt3.jpg']
 		});
 
 

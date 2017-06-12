@@ -1,0 +1,39 @@
+main {
+  width: 980px;
+  margin: 60px auto; }
+  main img {
+    display: block;
+    float: left; }
+  main form {
+    float: left;
+    width: 380px;
+    font-size: 20px;
+    margin-left: 60px; }
+    main form input {
+      height: 30px; }
+    main form fieldset {
+      border: none;
+      padding: 30px;
+      background: #fef5f5; }
+    main form p {
+      width: 100%;
+      margin-top: 30px;
+      height: 30px; }
+      main form p button {
+        margin-left: 6em;
+        width: 89px;
+        height: 38px;
+        text-indent: 0;
+        color: #fff;
+        font-weight: bold;
+        background: #F60;
+        border-radius: 8px; }
+      main form p .fp {
+        margin-left: 1em; }
+      main form p a {
+        font-size: 14px;
+        padding-left: 10px;
+        text-decoration: underline;
+        color: #f60; }
+    main form p:last-child {
+      font-size: 12px; }

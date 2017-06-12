@@ -3,18 +3,87 @@
 <head>
 	<meta charset="UTF-8">
 	<title>用户注册</title>
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/signup.css">
+	<script src="../js/require.js" data-main="../js/signup"></script>
 </head>
 <body>
-	<header>
-		<a href="index.html">
-			<h1>名鞋库</h1>
-		</a>
-	</header>
+	<div id="header_main" style="margin: 0 auto;
+    width: 990px;">
+			<a href="../index.html">
+				<h1>名鞋库</h1>
+			</a>
+	</div>
 	<main>
-		
+		<p class="tt"><a href="index.html">返回首页</a></p>
+		<form action="#" method="get">
+			<fieldset>
+				<legend>名鞋库用户注册</legend>
+				<p>
+					<label for="username" class="fp1">用户名：</label>
+					<input type="text" placeholder="邮箱/手机" id="username">
+				</p>
+				<p>
+					<label for="password" class="fp2">密码：</label>
+					<input type="password" id="password">
+				</p>	
+				<p>
+					
+					<label for="sure" class="fp3">确认密码：</label>
+					<input type="password" id="sure">
+				</p>
+				<p>
+					
+					<label for="yzm" class="fp4">验证码：</label>
+					<input type="text" id="yzm">
+				</p>
+				<p>
+					
+					<label class="fp5">
+						<input type="checkbox">
+						我已阅读并同意<a href="//www.s.cn/page-license.html">名鞋库会员注册协议</a>
+					</label>
+				</p>
+				<p>
+					
+					<button type="submit" class="fp6 no" disabled>新注册用户</button>
+				</p>
+				<div class="left clearfix">
+					<b>已有名鞋库账号？</b><br>
+					<a href="login.html">现在登录</a>
+				</div>
+				
+			</fieldset>	
+		</form>
 	</main>
-	<footer>
+	<div class="links">
+		<a href="//www.s.cn/artlist-100.html" target="_blank">关于名鞋库</a>
+		&nbsp;|&nbsp;
+		<a href="//www.s.cn/artlist-100.html" target="_blank">名鞋库资讯</a>
+		&nbsp;|&nbsp;
+		<a href="//www.s.cn/artlist-100.html" target="_blank">联系名鞋库</a>
+		&nbsp;|&nbsp;
+		<a href="//www.s.cn/artlist-100.html" target="_blank">人才招聘</a>
+		&nbsp;|&nbsp;
+		<a href="//www.s.cn/artlist-100.html" target="_blank">免责条款</a>
+		&nbsp;|&nbsp;
+		<a href="//www.s.cn/artlist-100.html" target="_blank">法律声明</a>
+		&nbsp;|&nbsp;
+		<a href="//www.s.cn/artlist-100.html" target="_blank">意见反馈</a>
+		&nbsp;|&nbsp;
+		<a href="//www.s.cn/artlist-100.html" target="_blank">全部分类</a>
+		&nbsp;|&nbsp;
+		<a href="//www.s.cn/artlist-100.html" target="_blank">友情链接</a>
+		&nbsp;|&nbsp;
+		<a href="//www.s.cn/artlist-100.html" target="_blank">鞋码对照表</a>
+		&nbsp;|&nbsp;
+		<a href="//www.s.cn/artlist-100.html" target="_blank">问答咨询</a>
+		&nbsp;|&nbsp;
+		<a href="//www.s.cn/artlist-100.html" target="_blank">鞋类品牌大全</a>
+		&nbsp;|&nbsp;
+		<a href="//www.s.cn/artlist-100.html" target="_blank">商品大全</a>
 		<p>Copyright © 2008-2014 <b>s.cn</b> 名鞋库 All Rights Reserved.    闽ICP备08106896号 &nbsp;&nbsp;   经营许可证闽B2-20110061   &nbsp;&nbsp; 闽公网安备 35020602000166号</p>
-	</footer>
+	</div>
 </body>
 </html>

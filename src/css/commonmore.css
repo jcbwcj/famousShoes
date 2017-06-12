@@ -1,159 +1,73 @@
-/* body{width: 100%;overflow-x:hidden} */
-/* ------------header--------------- */
-/* header{
-	width: 100%;
-	height: 25px;
-	background-color:#eee;
-	border-bottom: 1px solid #e5e5e5;
+body {
+  width: 100%;
+  overflow-x: hidden; }
 
-	.container{
-		ul{
-			float:right;
-			
+header {
+  width: 100%;
+  height: 25px;
+  background-color: #eee;
+  border-bottom: 1px solid #e5e5e5; }
+  header .container ul {
+    float: right; }
+    header .container ul li {
+      float: left;
+      height: 16px;
+      line-height: 16px;
+      margin-top: 4px;
+      border-right: 1px solid #d4d4d4;
+      padding: 0 16px 0 15px;
+      position: relative; }
+      header .container ul li a {
+        color: #656565;
+        font-size: 12px; }
+      header .container ul li a:hover {
+        color: #f60;
+        text-decoration: underline; }
+      header .container ul li .a1 {
+        padding-right: 13px; }
+      header .container ul li .arror {
+        display: block;
+        width: 9px;
+        height: 5px;
+        background: url("../images/sprites.fw.png");
+        position: absolute;
+        right: 10px;
+        top: 6px; }
+      header .container ul li .phone {
+        display: block;
+        width: 12px;
+        height: 16px;
+        position: absolute;
+        left: 14px;
+        top: 1px;
+        background: url("../images/sprites.fw.png") -30px 0; }
+      header .container ul li .qq {
+        display: block;
+        width: 17px;
+        height: 16px;
+        position: absolute;
+        left: 14px;
+        top: 0;
+        background: url("../images/sprites.fw.png") -70px 0; }
+      header .container ul li .tele {
+        display: block;
+        width: 18px;
+        height: 16px;
+        position: absolute;
+        top: 0;
+        left: 14px;
+        background: url("../images/sprites.fw.png") -110px 0; }
+    header .container ul .tu_r {
+      padding-right: 26px; }
+    header .container ul .tu_l {
+      padding-left: 35px; }
+    header .container ul .one a {
+      color: #fe6603; }
+    header .container ul .last a {
+      color: #b60c15;
+      font-size: 14px;
+      font-weight: bold; }
 
-			li{
-				float: left;
-				height: 16px;
-				line-height: 16px;
-				margin-top: 4px;
-				border-right: 1px solid #d4d4d4;
-				padding:0 16px 0 15px;
-				position: relative;
-				
-				a{color:#656565;font-size:12px;}
-				.a1{padding-right: 13px;}
-				.arror{
-					display:block;
-					width: 9px;
-					height: 5px;
-					background:url('../images/sprites.fw.png');
-					position: absolute;
-					right: 10px;
-					top: 6px;
-				}
-				.phone{
-					display:block;
-					width: 12px;
-					height: 16px;
-					position: absolute;
-					left: 14px;
-					top: 1px;
-					background:url('../images/sprites.fw.png') -30px 0;
-				}
-				.qq{
-					display:block;
-					width: 17px;
-					height: 16px;
-					position: absolute;
-					left: 14px;
-					top: 0;
-					background: url('../images/sprites.fw.png') -70px 0;
-				}
-				.tele{
-					display:block;
-					width: 18px;
-					height: 16px;
-					position: absolute;
-					top: 0;
-					left: 14px;
-					background:url('../images/sprites.fw.png') -110px 0;
-				}
-			}
-
-			.tu_r{
-				padding-right: 26px;
-			}
-			.tu_l{
-				padding-left: 35px;
-			}
-
-			.one{
-				a{color:#fe6603;}
-			}
-			.last{
-				a{color:#b60c15;font-size:14px;font-weight: bold;}
-			}
-		}
-	}
-} */
-/* -------------header_main-------------------- */
-/* #header_main{
-	width: 100%;
-	height: 77px;
-
-	a{
-		display:inline-block;
-		float:left;
-		h1{
-			width: 425px;
-			height: 77px;
-			text-indent:-1000px;
-			background:url('../images/sprites.fw.png') 0 -35px;
-		}
-	}
-
-	.search{
-		float:left;
-		margin-left: 115px;
-		height: 77px;
-
-		form{margin-top: 16px;}
-		.text1{
-			width: 265px;
-			height: 26px;
-			float: left;
-			border:2px solid #ccc;
-			border-right:0;
-			padding-left: 7px;
-			color:#656565;
-		}
-		.button1{
-			width: 65px;
-			height: 30px;
-			float: left;
-			background-color: #444444;
-			border:0;
-			color:#FCF7D1;
-		}
-		p{
-			float:left;
-			font-size: 12px;
-			color:#868686;
-			line-height: 30px;
-			span{color:#CBCBCB;}
-		}
-	}
-
-	.shoppingcar{
-		float: right;
-		width: 80px;
-		height: 32px;
-		line-height: 32px;
-		background-color: #FCFCFC;
-		border:1px solid #D7D7D7;
-		padding-left: 45px;
-		margin-top: 20px;
-		font-size: 12px;
-		color:#666666;
-		position: relative;
-
-		.shoppingcar_img{
-			display: block;
-			width: 23px;
-			height: 20px;
-			background: url("../images/sprites.fw.png") -155px 0;
-			position: absolute;
-			left:10px;
-			top:50%;
-			margin-top: -10px;
-		}
-
-		span{
-			color:#CB0155;
-		}
-	}
-} */
-/* ----------nav------------------ */
 #header_nav {
   width: 100%;
   height: 34px;
@@ -174,6 +88,7 @@
       font-weight: bold; }
     #header_nav .container .nav1 ul {
       display: none;
+      float: left;
       position: absolute;
       left: 0;
       top: 34px;
@@ -349,292 +264,69 @@
       color: white;
       padding: 10px 0; }
 
-/* --------------banner----main-------------------- */
-#banner {
+#header_main {
   width: 100%;
-  height: 700px;
-  background: url("../images/banner.jpg") center; }
-
-main {
-  width: 100%;
-  background: #7213e3 url("../images/bg.jpg") center bottom repeat-y; }
-
-/* ---------------sports-------------------------- */
-#sportsLog {
-  padding-top: 20px; }
-  #sportsLog ul {
-    overflow: hidden; }
-    #sportsLog ul li {
-      float: left;
-      background: url("img/sli.png") no-repeat #fff;
-      width: 167px;
-      height: 94px;
-      margin-right: 3px;
-      position: relative; }
-      #sportsLog ul li a {
-        display: block;
-        width: 157px;
-        height: 84px;
-        margin: 5px;
-        overflow: hidden;
-        position: absolute;
-        left: 0;
-        top: 0; }
-        #sportsLog ul li a img {
-          position: absolute;
-          left: 0;
-          top: 0; }
-
-/* ----------------menu--------------------------- */
-#menu {
-  margin-top: 20px;
-  background-color: white; }
-  #menu .menu_l {
-    width: 280px;
-    float: left;
-    border: 1px solid #e6e6e6;
-    margin-right: 5px;
-    padding-left: 150px;
-    position: relative; }
-    #menu .menu_l img {
-      display: block;
-      position: absolute;
-      left: 0px; }
-    #menu .menu_l ul.type {
-      float: left; }
-      #menu .menu_l ul.type li {
-        margin: 20px 10px 0 0;
-        cursor: pointer;
-        background: url("img/menu1.png") no-repeat 0 -52px;
-        width: 122px;
-        height: 52px;
-        display: block; }
-      #menu .menu_l ul.type li:last-child {
-        background: url("img/menu2.png") no-repeat 0 -52px; }
-    #menu .menu_l .content ul {
-      float: left;
-      font-size: 16px;
-      margin: 30px 0 0 20px;
-      height: 265px; }
-      #menu .menu_l .content ul li {
-        line-height: 2; }
-  #menu .menu_r {
-    width: 142px;
-    border-right: none; }
-
-/* --------------zq------------------- */
-#zq {
-  margin-top: 20px; }
-  #zq li {
-    width: 392px;
-    height: 364px;
-    position: relative;
-    float: left;
-    text-align: center;
-    margin: 0 4px 4px 0; }
-    #zq li .ball {
-      width: 241px;
-      height: 241px;
-      margin: 32px 0 0 76px;
-      transform: rotate(0deg);
-      transition: all 1s;
-      background: url("img/ball.png") center no-repeat; }
-    #zq li .ballpic {
-      position: absolute;
-      left: 73px;
-      top: 36px; }
-  #zq .bg1 {
-    background: url("img/bg1.jpg"); }
-  #zq .bg2 {
-    background: url("img/bg2.jpg"); }
-  #zq .text {
-    font-family: "microsoft yahei";
-    color: #fff;
-    padding-top: 34px;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 24px; }
-    #zq .text p:first-child {
-      font-size: 24px; }
-    #zq .text p:last-child {
-      font-size: 16px; }
-  #zq li:hover p {
-    color: black; }
-  #zq li:hover .ball {
-    transform: rotate(360deg); }
-
-/* ---------------fl------------------------- */
-#fl {
-  margin-top: 10px;
-  position: relative;
-  height: 715px;
-  background: url(img/flbg.jpg); }
-  #fl ul {
-    float: left;
-    width: 274px;
-    height: 695px;
-    background: url(img/flbg1.png);
-    margin-right: 18px; }
-    #fl ul li {
-      width: 274px;
-      float: left;
-      margin-top: 70px; }
-      #fl ul li .text {
-        font-family: "microsoft yahei";
-        color: #fff;
-        font-size: 18px;
-        text-align: center;
-        line-height: 34px;
-        letter-spacing: 2px; }
-        #fl ul li .text span {
-          border: 1px solid #fff;
-          font-size: 16px;
-          text-align: center;
-          padding: 0 10px; }
-    #fl ul li:hover span {
-      background: black; }
-  #fl .star {
-    position: absolute;
-    right: 94px;
-    top: -10px; }
-
-/* ----------------goods------------------- */
-#goods {
-  width: 990px;
-  margin: 20px auto; }
-  #goods .goodshead {
-    height: 259px;
-    background: url("img/goodsheadbg.jpg") no-repeat;
-    width: 970px;
-    height: 179px;
-    padding: 10px;
-    position: relative; }
-    #goods .goodshead .cover {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: transparent;
-      transition: all 1s; }
-    #goods .goodshead .text {
-      position: absolute;
-      left: 0;
-      bottom: 50px;
-      transition: all 1s;
-      font-family: "microsoft yahei";
-      text-align: center;
-      width: 100%;
-      z-index: 2; }
-      #goods .goodshead .text p:first-child {
-        color: #fff;
-        font-weight: bold;
-        font-size: 27px;
-        line-height: 27px;
-        text-align: center; }
-      #goods .goodshead .text p:last-child {
-        color: #fff;
-        font-size: 20px;
-        margin-top: 7px;
-        padding: 0 10px 0 15px;
-        border: 0;
-        display: inline-block; }
-  #goods .goodshead:hover .cover {
-    background-color: rgba(0, 0, 0, 0.5); }
-  #goods .goodshead:hover .text {
-    bottom: 70px; }
-  #goods .type {
-    height: 49px;
-    padding-top: 10px;
-    background: url("img/goodstypebg.jpg"); }
-    #goods .type span {
-      float: left;
-      font-family: "microsoft yahei";
-      font-size: 19px;
-      color: #fff;
-      line-height: 32px;
-      font-weight: bold;
-      padding: 0 22px; }
-    #goods .type a {
-      float: left;
-      width: 130px;
-      height: 40px;
-      display: block;
-      background: #6310de;
-      color: #fff;
-      line-height: 40px;
-      text-align: center;
-      margin: 0 2px;
-      font-size: 19px;
-      font-weight: bold; }
-    #goods .type a:hover {
-      background: black; }
-  #goods .goodslist dl {
+  height: 77px; }
+  #header_main a {
     display: inline-block;
-    width: 186px;
-    margin: 10px 2px;
-    background-color: #fff;
-    border: 2px solid #fff; }
-    #goods .goodslist dl dt {
-      background-color: #fff;
-      height: 160px;
-      text-align: center;
-      padding: 1px;
-      position: relative;
-      border-bottom: 1px solid #ccc; }
-      #goods .goodslist dl dt a {
-        padding: 0 11px;
-        width: 100%;
-        text-align: center;
-        display: block; }
-      #goods .goodslist dl dt img {
-        height: 160px;
-        width: 160px; }
-    #goods .goodslist dl ul {
-      background-color: #fff;
-      width: 182px;
-      border: 2px solid #fff;
-      border-top: none;
-      padding: 0 0 4px 0;
-      height: auto;
-      overflow: visible; }
-      #goods .goodslist dl ul .f1 {
-        white-space: nowrap;
-        width: 186px;
-        height: 36px;
-        line-height: 18px;
-        padding-top: 4px;
-        padding-left: 4px;
-        text-overflow: ellipsis; }
-      #goods .goodslist dl ul .f2 {
-        height: 22px;
-        line-height: 22px;
-        padding-left: 3px;
-        position: relative; }
-        #goods .goodslist dl ul .f2 .price {
-          padding-right: .3rem;
-          font-size: 18px;
-          font-family: Microsoft Yahei;
-          font-weight: 700;
-          color: #f00; }
-        #goods .goodslist dl ul .f2 .del_price {
-          color: #000;
-          text-decoration: line-through; }
-        #goods .goodslist dl ul .f2 .buy_btn {
-          display: block;
-          width: 65px;
-          height: 18px;
-          line-height: 18px;
-          text-align: center;
-          color: #fff;
-          background: #000;
-          position: absolute;
-          right: 3px;
-          bottom: 2px; }
-  #goods .goodslist dl:hover {
-    border: 2px solid #f60; }
+    float: left; }
+    #header_main a h1 {
+      width: 425px;
+      height: 77px;
+      text-indent: -1000px;
+      background: url("../images/sprites.fw.png") 0 -35px; }
+  #header_main .search {
+    float: left;
+    margin-left: 115px;
+    height: 77px; }
+    #header_main .search form {
+      margin-top: 16px; }
+    #header_main .search .text1 {
+      width: 265px;
+      height: 26px;
+      float: left;
+      border: 2px solid #ccc;
+      border-right: 0;
+      padding-left: 7px;
+      color: #656565; }
+    #header_main .search .button1 {
+      width: 65px;
+      height: 30px;
+      float: left;
+      background-color: #444444;
+      border: 0;
+      color: #FCF7D1; }
+    #header_main .search p {
+      float: left;
+      font-size: 12px;
+      color: #868686;
+      line-height: 30px; }
+      #header_main .search p span {
+        color: #CBCBCB; }
+  #header_main .shoppingcar {
+    float: right;
+    width: 80px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #FCFCFC;
+    border: 1px solid #D7D7D7;
+    padding-left: 45px;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666666;
+    position: relative; }
+    #header_main .shoppingcar .shoppingcar_img {
+      display: block;
+      width: 23px;
+      height: 20px;
+      background: url("../images/sprites.fw.png") -155px 0;
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      margin-top: -10px; }
+    #header_main .shoppingcar span {
+      color: #CB0155; }
 
-/* ----------------footxxxx---------------------------- */
 .footbrand {
   width: 1000px;
   background: #fff;
@@ -748,7 +440,6 @@ main {
   margin: 0 auto;
   width: 990px; }
 
-/* -------------------footer------------------------- */
 footer {
   height: 226px;
   background-color: #F5F5F5;
@@ -847,57 +538,28 @@ footer {
           line-height: 18px;
           color: #9C9C9C; }
 
-/* ---------------------links--------------------------------- */
-/* .links{
-	text-align: center;
-    padding: 20px 0;
-    a:hover{
-		text-decoration:underline;
-		color:#f60;
-    }
-    b{
-    	color:#f60;
-    	font-size:20px;
-    }
-    .last{
-    	width: 640px;
-    	height: 50px;
-    	margin: 20px auto 10px;
-		a{
-			display:block;
-			float: left;
-		    width: 112px;
-		    height: 47px;
-		    margin-right: 10px;
-		    border:1px solid #fff;
-		    img{width: 100%;height: 100%;}
-		}
-		a:hover{
-			border:1px solid #ccc;
-		}
-    }
-}
- */
-.friendlinks {
-  margin: 3px auto;
-  width: 990px;
-  padding: 10px 0;
-  border-top: 1px dotted #ccc;
-  border-bottom: 1px dotted #ccc; }
-  .friendlinks h4 {
-    position: relative;
-    overflow: hidden; }
-    .friendlinks h4 ul {
-      overflow: hidden;
-      position: absolute;
-      left: 75px;
-      top: 0; }
-      .friendlinks h4 ul li {
-        font-size: 12px;
-        line-height: 16px;
-        font-weight: normal; }
-        .friendlinks h4 ul li a {
-          margin-right: 5px; }
-        .friendlinks h4 ul li a:hover {
-          text-decoration: underline;
-          color: #f60; }
+.links {
+  text-align: center;
+  padding: 20px 0; }
+  .links a:hover {
+    text-decoration: underline;
+    color: #f60; }
+  .links b {
+    color: #f60;
+    font-size: 20px; }
+  .links .last {
+    width: 640px;
+    height: 50px;
+    margin: 20px auto 10px; }
+    .links .last a {
+      display: block;
+      float: left;
+      width: 112px;
+      height: 47px;
+      margin-right: 10px;
+      border: 1px solid #fff; }
+      .links .last a img {
+        width: 100%;
+        height: 100%; }
+    .links .last a:hover {
+      border: 1px solid #ccc; }

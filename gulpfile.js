@@ -20,7 +20,7 @@ gulp.task('ser',function(){
 	browserSync({
 		server:'./src/',
 
-		files:['./src/*.html','./src/css/*.css','./src/js/*.js']
+		files:['./src/**/*.html','./src/css/*.css','./src/js/*.js']
 	});
 
 	gulp.watch('./src/sass/*.scss',['compileSass'])

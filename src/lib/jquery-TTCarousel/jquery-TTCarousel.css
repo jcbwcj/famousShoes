@@ -1,9 +1,9 @@
 
-.box{position:relative;width:900px;height:500px;overflow: hidden;margin: 50px auto;border: 5px solid #ddd;}
-.box b{display: block;color: #ddd;background: #999;position: absolute;font-size: 20px;padding: 3px 6px;cursor: pointer;}
+.box{position:relative;width:1190px;height:500px;overflow: hidden;margin: 50px auto;border: 5px solid #ddd;}
+.box b{display: block;color: #ddd;background: #999;opacity: 0.4;position: absolute;font-size: 20px;padding: 3px 6px;cursor: pointer;}
 .box .prev{top: 45%;left: 0;}
 .box .next{top: 45%;right: 0;}
-.box img{display:block;}
+.box img{display:block;width: 1190px;height: 500px;}
 .box ul{position:absolute;top:0;left:0;overflow:hidden;list-style: none;padding:0;margin:0;}
 .box li{float:left;}
 .box .spans{position: absolute;width: 150px;height: 30px;bottom: 0;left: 50%;margin-left: -45px;cursor: pointer;}

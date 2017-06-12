@@ -1,0 +1,158 @@
+body {
+  width: 100%;
+  overflow-x: hidden; }
+
+header {
+  width: 100%;
+  height: 25px;
+  background-color: #eee;
+  border-bottom: 1px solid #e5e5e5; }
+  header .container ul {
+    float: right; }
+    header .container ul li {
+      float: left;
+      height: 16px;
+      line-height: 16px;
+      margin-top: 4px;
+      border-right: 1px solid #d4d4d4;
+      padding: 0 16px 0 15px;
+      position: relative; }
+      header .container ul li a {
+        color: #656565;
+        font-size: 12px; }
+      header .container ul li a:hover {
+        color: #f60;
+        text-decoration: underline; }
+      header .container ul li .a1 {
+        padding-right: 13px; }
+      header .container ul li .arror {
+        display: block;
+        width: 9px;
+        height: 5px;
+        background: url("../images/sprites.fw.png");
+        position: absolute;
+        right: 10px;
+        top: 6px; }
+      header .container ul li .phone {
+        display: block;
+        width: 12px;
+        height: 16px;
+        position: absolute;
+        left: 14px;
+        top: 1px;
+        background: url("../images/sprites.fw.png") -30px 0; }
+      header .container ul li .qq {
+        display: block;
+        width: 17px;
+        height: 16px;
+        position: absolute;
+        left: 14px;
+        top: 0;
+        background: url("../images/sprites.fw.png") -70px 0; }
+      header .container ul li .tele {
+        display: block;
+        width: 18px;
+        height: 16px;
+        position: absolute;
+        top: 0;
+        left: 14px;
+        background: url("../images/sprites.fw.png") -110px 0; }
+    header .container ul .tu_r {
+      padding-right: 26px; }
+    header .container ul .tu_l {
+      padding-left: 35px; }
+    header .container ul .one a {
+      color: #fe6603; }
+    header .container ul .last a {
+      color: #b60c15;
+      font-size: 14px;
+      font-weight: bold; }
+
+#header_main {
+  width: 100%;
+  height: 77px; }
+  #header_main .logo {
+    display: inline-block;
+    float: left; }
+    #header_main .logo h1 {
+      width: 425px;
+      height: 77px;
+      text-indent: -1000px;
+      background: url("../images/sprites.fw.png") 0 -35px; }
+  #header_main .search {
+    float: left;
+    margin-left: 115px;
+    height: 77px; }
+    #header_main .search form {
+      margin-top: 16px; }
+    #header_main .search .text1 {
+      width: 265px;
+      height: 26px;
+      float: left;
+      border: 2px solid #ccc;
+      border-right: 0;
+      padding-left: 7px;
+      color: #656565; }
+    #header_main .search .button1 {
+      width: 65px;
+      height: 30px;
+      float: left;
+      background-color: #444444;
+      border: 0;
+      color: #FCF7D1; }
+    #header_main .search p {
+      float: left;
+      font-size: 12px;
+      color: #868686;
+      line-height: 30px; }
+      #header_main .search p span {
+        color: #CBCBCB; }
+  #header_main .shoppingcar {
+    float: right;
+    width: 80px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #FCFCFC;
+    border: 1px solid #D7D7D7;
+    padding-left: 45px;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666666;
+    position: relative; }
+    #header_main .shoppingcar .shoppingcar_img {
+      display: block;
+      width: 23px;
+      height: 20px;
+      background: url("../images/sprites.fw.png") -155px 0;
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      margin-top: -10px; }
+    #header_main .shoppingcar span {
+      color: #CB0155; }
+
+.links {
+  text-align: center;
+  padding: 20px 0; }
+  .links a:hover {
+    text-decoration: underline;
+    color: #f60; }
+  .links b {
+    color: #f60;
+    font-size: 20px; }
+  .links .last {
+    width: 640px;
+    height: 50px;
+    margin: 20px auto 10px; }
+    .links .last a {
+      display: block;
+      float: left;
+      width: 112px;
+      height: 47px;
+      margin-right: 10px;
+      border: 1px solid #fff; }
+      .links .last a img {
+        width: 100%;
+        height: 100%; }
+    .links .last a:hover {
+      border: 1px solid #ccc; }

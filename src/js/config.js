@@ -4,7 +4,8 @@
 	paths:{
 		'jquery':'../lib/jquery-3.2.1',
 		'TTCarousel':'../lib/jquery-TTCarousel/jquery-TTCarousel',
-		'gdszoom':'../lib/jquery-gdszoom/jquery.gdszoom'
+		'gdszoom':'../lib/jquery-gdszoom/jquery.gdszoom',
+		'common':'common'
 	},
 	shim:{
 		'gdszoom':['jquery'],
