@@ -96,5 +96,13 @@
 			this.style.transform = 'translateZ(0)';
 		});
 
+
+
+		$('.footbrand').on('mouseenter','a',function(){
+			$(this).css('background-color','rgba(0,0,0,0.2)');
+		}).on('mouseleave','a',function(){
+			$(this).css('background-color','rgba(0,0,0,0)');
+		});
+
 	});
 });

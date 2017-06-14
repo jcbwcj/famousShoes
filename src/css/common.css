@@ -114,6 +114,7 @@ header {
     line-height: 32px;
     background-color: #FCFCFC;
     border: 1px solid #D7D7D7;
+    border-radius: 3px;
     padding-left: 45px;
     margin-top: 20px;
     font-size: 12px;

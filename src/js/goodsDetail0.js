@@ -80,16 +80,6 @@
 		});
 
 
-
-
-
-
-
-var cookieGoodsList = getCookie('cookieGoodsList');
-cookieGoodsList = cookieGoodsList ? JSON.parse(cookieGoodsList) : [];
-
-
-
 		// 添加到购物车效果
 		$buyCar.click(function(){
 			var $img = $mpic.children('img');
@@ -130,9 +120,9 @@ var obj = {
 };
 
 /*-------------cookie------------------*/
-
-cookieGoodsList.push(obj);console.log(cookieGoodsList)
-setCookie('cookieGoodsList',JSON.stringify(cookieGoodsList));
+var cookieGoodsList = getCookie('cookieGoodsList');
+console.log(obj);
+cookieGoodsList = cookieGoodsList ? JSON.parse(cookieGoodsList) : [];
 
 
 				showRes();

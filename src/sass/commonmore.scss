@@ -407,6 +407,7 @@ header{
     line-height: 32px;
     background-color: #FCFCFC;
     border:1px solid #D7D7D7;
+    border-radius:4px;
     padding-left: 45px;
     margin-top: 20px;
     font-size: 12px;
@@ -427,6 +428,58 @@ header{
     span{
       color:#CB0155;
     }
+
+    .carList{
+      position: absolute;
+      visibility:hidden;
+      right: 0;
+      top: 100%;
+      background: #fff;
+      border: 3px solid #f4a318;
+      padding: 10px;
+      z-index:200;
+      li{
+        width: 280px;
+        height: 80px;
+        font-size:12px;
+        line-height: 1;
+        margin-bottom: 10px;
+        border-bottom: 1px #ccc dotted;
+        padding-bottom: 10px;
+        img{
+          width: 50px;
+          height: 50px;
+          padding:15px 0;
+          float:left;
+        }
+        a{
+          display:inline-block;
+          padding-top:15px;
+          padding-left:10px;
+          width: 110px;height: 65px;
+          float:left;
+        }
+          
+        a:hover{text-decoration:underline;color:#f60;}
+        p{
+          display:inline-block;
+          height: 80px;
+          float:left;               
+        }
+        .car-qty{
+          width: 37px;line-height: 80px;text-align:center;
+        }
+        .car-price{
+          padding-top:20px;line-height: 2;
+          width: 58px;margin:auto 0;text-align:center;
+          b{font-size:14px;color:#f60;}
+          .btn-close{cursor:pointer;}
+        }
+      }
+      button{background:red;border-radius:3px;color:white;}
+
+    }
+  
   }
 }
 
