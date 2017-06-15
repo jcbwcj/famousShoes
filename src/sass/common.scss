@@ -84,83 +84,134 @@ header{
 
 
 #header_main{
-	width: 100%;
-	height: 77px;
+  width: 100%;
+  height: 77px;
 
-	.logo{
-		display:inline-block;
-		float:left;
-		h1{
-			width: 425px;
-			height: 77px;
-			text-indent:-1000px;
-			background:url('../images/sprites.fw.png') 0 -35px;
-		}
-	}
+  a.logo{
+    display:inline-block;
+    float:left;
+    h1{
+      width: 425px;
+      height: 77px;
+      text-indent:-1000px;
+      background:url('../images/sprites.fw.png') 0 -35px;
+    }
+  }
 
-	.search{
-		float:left;
-		margin-left: 115px;
-		height: 77px;
+  .search{
+    float:left;
+    margin-left: 115px;
+    height: 77px;
 
-		form{margin-top: 16px;}
-		.text1{
-			width: 265px;
-			height: 26px;
-			float: left;
-			border:2px solid #ccc;
-			border-right:0;
-			padding-left: 7px;
-			color:#656565;
-		}
-		.button1{
-			width: 65px;
-			height: 30px;
-			float: left;
-			background-color: #444444;
-			border:0;
-			color:#FCF7D1;
-		}
-		p{
-			float:left;
-			font-size: 12px;
-			color:#868686;
-			line-height: 30px;
-			span{color:#CBCBCB;}
-		}
-	}
+    form{margin-top: 16px;}
+    .text1{
+      width: 265px;
+      height: 26px;
+      float: left;
+      border:2px solid #ccc;
+      border-right:0;
+      padding-left: 7px;
+      color:#656565;
+    }
+    .button1{
+      width: 65px;
+      height: 30px;
+      float: left;
+      background-color: #444444;
+      border:0;
+      color:#FCF7D1;
+    }
+    p{
+      float:left;
+      font-size: 12px;
+      color:#868686;
+      line-height: 30px;
+      span{color:#CBCBCB;}
+    }
+  }
 
-	.shoppingcar{
-		float: right;
-		width: 80px;
-		height: 32px;
-		line-height: 32px;
-		background-color: #FCFCFC;
-		border:1px solid #D7D7D7;
-		border-radius:3px;
-		padding-left: 45px;
-		margin-top: 20px;
-		font-size: 12px;
-		color:#666666;
-		position: relative;
+  .shoppingcar{
+    float: right;
+    width: 80px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #FCFCFC;
+    border:1px solid #D7D7D7;
+    border-radius:4px;
+    padding-left: 45px;
+    margin-top: 20px;
+    font-size: 12px;
+    color:#666666;
+    position: relative;
 
-		.shoppingcar_img{
-			display: block;
-			width: 23px;
-			height: 20px;
-			background: url("../images/sprites.fw.png") -155px 0;
-			position: absolute;
-			left:10px;
-			top:50%;
-			margin-top: -10px;
-		}
+    .shoppingcar_img{
+      display: block;
+      width: 23px;
+      height: 20px;
+      background: url("../images/sprites.fw.png") -155px 0;
+      position: absolute;
+      left:10px;
+      top:50%;
+      margin-top: -10px;
+    }
 
-		span{
-			color:#CB0155;
-		}
-	}
+    span{
+      color:#CB0155;
+    }
+
+    .carList{
+      position: absolute;
+      visibility:hidden;
+      right: 0;
+      top: 100%;
+      background: #fff;
+      border: 3px solid #f4a318;
+      padding: 10px;
+      z-index:200;
+      li{
+        width: 280px;
+        height: 80px;
+        font-size:12px;
+        line-height: 1;
+        margin-bottom: 10px;
+        border-bottom: 1px #ccc dotted;
+        padding-bottom: 10px;
+        img{
+          width: 50px;
+          height: 50px;
+          padding:15px 0;
+          float:left;
+        }
+        a{
+          display:inline-block;
+          padding-top:15px;
+          padding-left:10px;
+          width: 110px;height: 65px;
+          float:left;
+        }
+          
+        a:hover{text-decoration:underline;color:#f60;}
+        p{
+          display:inline-block;
+          height: 80px;
+          float:left;               
+        }
+        .car-qty{
+          width: 37px;line-height: 80px;text-align:center;
+        }
+        .car-price{
+          padding-top:20px;line-height: 2;
+          width: 58px;margin:auto 0;text-align:center;
+          b{font-size:14px;color:#f60;display:inline-block;width: 100%;}
+          .btn-close{cursor:pointer;}
+        }
+      }
+      button{background:red;border-radius:3px;color:white;}
+
+    }
+  
+  }
 }
-
 
 
 

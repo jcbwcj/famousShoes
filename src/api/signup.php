@@ -5,6 +5,7 @@
 	$username = isset($_GET['username']) ? $_GET['username'] : '';
 	$password = isset($_GET['password']) ? $_GET['password'] : '';
 
+	/*// ------1.0版本------
 	// SQL语句
 	$sql = "select username from usermsg";
 
@@ -23,15 +24,24 @@
 			$arr[$i] = $key; 
 		}
 	}
-	
-
 	// 查看从前端获取到的用户名与后台数据是否重复
 	// print_r($arr[2]);
 	if(in_array($username, $arr)){
 		echo '已经存在';
+	}else{xxx...};*/
+
+	// -------2.0版本--------
+	$sql = "select username from usermsg where username='$username'";
+	$res = $conn->query($sql);
+	$rows = $res->fetch_all(MYSQLI_ASSOC);
+	// print_r($rows);
+	
+	
+	// 直接从数据库获取用户名为$username的数据，能获取到说明已存在，否则不存在
+	if($rows){
+		echo '已经存在';
 	}else{
 		
-
 		// md5加密
 		$password = md5($password);
 
@@ -44,14 +54,11 @@
 			echo "ok";
 		}else{
 			echo "Error: " . $sql . "<br>" . $conn->error;
-		}
-
-		//关闭连接
-		$conn->close();
-		
+		}	
 	}
 
-
+	//关闭连接
+	$conn->close();
 
 
 

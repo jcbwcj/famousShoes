@@ -405,12 +405,14 @@ main {
       #menu .menu_l ul.type li {
         margin: 20px 10px 0 0;
         cursor: pointer;
-        background: url("img/menu1.png") no-repeat 0 -52px;
+        background: url("img/menu1.png") no-repeat 0 0;
         width: 122px;
         height: 52px;
         display: block; }
       #menu .menu_l ul.type li:last-child {
         background: url("img/menu2.png") no-repeat 0 -52px; }
+    #menu .menu_l .content .contentclothes {
+      display: none; }
     #menu .menu_l .content ul {
       float: left;
       font-size: 16px;
@@ -583,7 +585,6 @@ main {
       position: relative;
       border-bottom: 1px solid #ccc; }
       #goods .goodslist dl dt a {
-        padding: 0 11px;
         width: 100%;
         text-align: center;
         display: block; }
@@ -728,7 +729,7 @@ main {
     .footbody dl dt img {
       width: 80px;
       height: 80px;
-      margin: 0 auto; }
+      margin: 0 82px; }
     .footbody dl dd {
       border-right: 1px dotted #ccc;
       height: 85px;

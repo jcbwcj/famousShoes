@@ -5,10 +5,12 @@
 		'jquery':'../lib/jquery-3.2.1',
 		'TTCarousel':'../lib/jquery-TTCarousel/jquery-TTCarousel',
 		'gdszoom':'../lib/jquery-gdszoom/jquery.gdszoom',
-		'common':'common'
+		'common':'common',
+		'lazyload':'../lib/jquery.lazyload.min'
 	},
 	shim:{
 		'gdszoom':['jquery'],
-       	'TTCarousel':['jquery']
+       	'TTCarousel':['jquery'],
+       	'lazyload':['jquery']
 	}
 });

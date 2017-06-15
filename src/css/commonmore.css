@@ -478,7 +478,7 @@ header {
     .footbody dl dt img {
       width: 80px;
       height: 80px;
-      margin: 0 auto; }
+      margin: 0 82px; }
     .footbody dl dd {
       border-right: 1px dotted #ccc;
       height: 85px;

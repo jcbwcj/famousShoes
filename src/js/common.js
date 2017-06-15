@@ -404,3 +404,126 @@ function type(data){
 // type({}) => 'object'
 // type([]) => 'array'
 // type(/aa/) => 'regexp'
+
+
+
+
+
+/*function buyCar(){
+	var $carList = $('.carList');
+	var $shoppingcar = $('.shoppingcar');
+	var cookieGoodsList = getCookie('cookieGoodsList');
+	cookieGoodsList = cookieGoodsList ? JSON.parse(cookieGoodsList) : [];
+}
+
+buyCar.prototype.showCarList = function(){	
+	var cookieGoodsList = getCookie('cookieGoodsList');
+	cookieGoodsList = cookieGoodsList ? JSON.parse(cookieGoodsList) : [];
+	var res = cookieGoodsList.map(function(item){
+		return `
+			<li>
+				<img src="${item.url.replace('../','')}" data-guid="${item.guid}"/>
+				<a href="#">${item.msg} (颜色：${item.color}  尺码：${item.size})</a>
+				<p class="car-qty">${item.qty}</p>
+				<p class="car-price"><b>￥${item.price.slice(1)}</b><span class="btn-close">删除</span></p>
+			</li>
+		`;
+	}).join('');
+	res += `<div>总价：￥<span class="carListTotal"></span></div>
+						<button>现在去结算</button>`;
+	$carList.html(res);
+}
+
+buyCar.prototype.showRes(){
+	var $carQty = $carList.find('.car-qty');
+	var $carPrice = $carList.find('.car-price b');
+	var resNum = 0;
+	var resTotal = 0;
+	for(var i=0;i<$carList.find('.car-qty').length;i++){
+		resNum += parseInt($carQty.eq(i).text());
+		resTotal += parseInt($carQty.eq(i).text())*parseInt($carPrice.eq(i).text().slice(1));
+	}
+	$('.shoppingcarNum').text(resNum);
+	$('.carListTotal').text(resTotal);
+	// console.log(resTotal);
+};
+*/
+
+/*
+		// 根据cookie写入购物车html
+		buyCar.prototype.showCarList = function(){
+			var cookieGoodsList = getCookie('cookieGoodsList');
+			cookieGoodsList = cookieGoodsList ? JSON.parse(cookieGoodsList) : [];
+			var res = cookieGoodsList.map(function(item){
+				return `
+					<li>
+						<img src="${item.url.replace('../','')}" data-guid="${item.guid}"/>
+						<a href="#">${item.msg} (颜色：${item.color}  尺码：${item.size})</a>
+						<p class="car-qty">${item.qty}</p>
+						<p class="car-price"><b>￥${item.price.slice(1)}</b><span class="btn-close">删除</span></p>
+					</li>
+				`;
+			}).join('');
+			res += `<div>总价：￥<span class="carListTotal"></span></div>
+								<button>现在去结算</button>`;
+			$carList.html(res);
+			showRes();
+		};
+
+
+		// 购物车数量、总价计算
+		buyCar.prototype.showRes = function(){
+			var $carQty = $carList.find('.car-qty');
+			var $carPrice = $carList.find('.car-price b');
+			var resNum = 0;
+			var resTotal = 0;
+			for(var i=0;i<$carList.find('.car-qty').length;i++){
+				resNum += parseInt($carQty.eq(i).text());
+				resTotal += parseInt($carQty.eq(i).text())*parseInt($carPrice.eq(i).text().slice(1));
+			}
+			$('.shoppingcarNum').text(resNum);
+			$('.carListTotal').text(resTotal);
+			// console.log(resTotal);
+		};
+
+		$shoppingcar.mouseenter(function(){
+				$shoppingcar.css('background-color','#f4a318');
+				$carList.css('visibility','visible');
+			}).mouseleave(function(){
+				$shoppingcar.css('background-color','#FCFCFC');
+				$carList.css('visibility','hidden');
+			});
+
+		$carList.on('click','button',function(){
+					location.href = 'html/buyCar.html';
+				})
+
+
+		$carList.on('click','.btn-close',function(){
+		            var $currentLi = $(this).closest('li');
+		            // $currentLi.remove();
+		            var guid = $currentLi.children('img').attr('data-guid');
+		            cookieGoodsList = JSON.parse(getCookie('cookieGoodsList'));
+
+		            for(var i=0;i<cookieGoodsList.length;i++){
+						if(cookieGoodsList[i].guid === guid){
+
+							// cookieGoodsList[i].qty -= 1;//！！！千万不要这么用，前面的不是变量
+							var newQty = cookieGoodsList[i].qty;
+							newQty--;
+							cookieGoodsList[i].qty = newQty;
+
+							if(cookieGoodsList[i].qty<=0){
+								$currentLi.remove();
+								cookieGoodsList.splice(i,1);
+							}
+							break;
+						}
+					}
+
+					var now = new Date();
+					now.setDate(now.getDate() + 7);
+					setCookie('cookieGoodsList',JSON.stringify(cookieGoodsList),now.toUTCString(),'/');
+					showCarList();
+		            
+		        });*/
