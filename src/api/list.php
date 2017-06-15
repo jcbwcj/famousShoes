@@ -27,7 +27,8 @@
 
 	echo json_encode($result,JSON_UNESCAPED_UNICODE);
 
-
+	// 关闭连接
+	$conn->close();
 
 
 

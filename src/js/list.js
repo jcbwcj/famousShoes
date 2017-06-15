@@ -61,16 +61,22 @@
 		// 封装函数，减少代码重复
 		function show(res){
 			var html=res.data.map(function(item){
+				
+				// 拼接参数,便于下一页面获取数据
+				// var params = `?guid=${item.id}&imgurl=${item.imgurl}&name=${item.name}&category=${item.category}&price=${item.price}&color=${item.color}`;
+				// console.log(params);
+
+
 
 				return `
 					<dl>
 						<dt>
-							<a href="#">
+							<a href="goodsDetail.html?guid=${item.id}">
 								<img src="../${item.imgurl}" alt="">
 							</a>
 						</dt>
 						<dd>
-							<a href="#">
+							<a href="goodsDetail.html?guid=${item.id}">
 								<ul>
 									<li class="f1">
 										${item.name} &nbsp;&nbsp;&nbsp; ${item.category} &nbsp;&nbsp;&nbsp; ${item.color}

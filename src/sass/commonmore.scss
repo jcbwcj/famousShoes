@@ -472,7 +472,7 @@ header{
         .car-price{
           padding-top:20px;line-height: 2;
           width: 58px;margin:auto 0;text-align:center;
-          b{font-size:14px;color:#f60;}
+          b{font-size:14px;color:#f60;display:inline-block;width: 100%;}
           .btn-close{cursor:pointer;}
         }
       }

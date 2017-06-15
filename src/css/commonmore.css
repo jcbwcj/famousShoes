@@ -375,7 +375,9 @@ header {
           text-align: center; }
           #header_main .shoppingcar .carList li .car-price b {
             font-size: 14px;
-            color: #f60; }
+            color: #f60;
+            display: inline-block;
+            width: 100%; }
           #header_main .shoppingcar .carList li .car-price .btn-close {
             cursor: pointer; }
       #header_main .shoppingcar .carList button {
