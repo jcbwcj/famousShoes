@@ -113,6 +113,16 @@
 				timer = setInterval(show,3000);
 			})
 
+			//点击翻页，实现跳转
+			$spans.on('click','span',function(){
+				index = $(this).text()-1;
+				/*console.log(index);*/
+				// showPic();
+				//这里不能调用showPic();会导致图片闪烁，定时器冲突
+				$ul[0].style.left =-opt.width*index + 'px';
+				light();
+			});
+
 			// 左右按钮
 			var $prev = $('<b/>').addClass('prev').html('&lt;');
 			var $next = $('<b/>').addClass('next').html('&gt;');

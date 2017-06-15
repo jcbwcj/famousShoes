@@ -1,5 +1,31 @@
 ;require(['config'],function(){
-	require(['jquery'],function($){
+	require(['jquery','validate','messages'],function($,validate,messages){
+		
+			$('form').validate({
+                // 验证规则
+                rules:{
+                    username:{
+                        required:true,
+                        rangelength:[10,12]
+                    },
+                	password:{
+                        required:true,
+                        rangelength:[6,12]
+                    }
+                },
+
+                // 自定义提示
+                messages:{
+                    username:{
+                        required:'*必填项'
+                    },
+                    password:{
+                        required:'*必填项'
+                    }
+                }
+            });
+
+
 		// 阅读并同意必须勾选
 		var $checkbox = $(':checkbox');
 		var $btn = $('button');
@@ -11,6 +37,8 @@
 				$btn.prop('disabled',true).addClass('no');
 			}
 		});
+
+		
 
 		// 点击提交传递信息到后台
 		$btn.on('click',function(){

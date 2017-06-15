@@ -2,6 +2,14 @@
 	require(['jquery','TTCarousel','common','lazyload'],function($,Carousel,common,lazyload){
 		var $carList = $('.carList');
 		var $shoppingcar = $('.shoppingcar');
+
+		// header显示用户名
+		var username = location.search.slice(10);
+		var str = `<a href="#" class="a1"><b style="font-size:16px;">${username}</b>,欢迎登录名鞋库</a>
+					<a href="html/login.html">退出</a>
+		`;
+		$('header .one').html(str);
+
 		// 轮播图
 		$('.carousel').TTCarousel({
 			width:1190,

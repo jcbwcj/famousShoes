@@ -17,21 +17,21 @@
 	</div>
 	<main>
 		<p class="tt"><a href="index.html">返回首页</a></p>
-		<form action="#" method="get">
+		<form action="#" method="post">
 			<fieldset>
 				<legend>名鞋库用户注册</legend>
 				<p>
+					<!-- name属性必须添加 ，否则volidate效果出不来-->
 					<label for="username" class="fp1">用户名：</label>
-					<input type="text" placeholder="邮箱/手机" id="username">
+					<input name="username" type="text" placeholder="邮箱/手机" id="username">
 				</p>
 				<p>
 					<label for="password" class="fp2">密码：</label>
-					<input type="password" id="password">
+					<input name="password" type="password" id="password">
 				</p>	
-				<p>
-					
+				<p>			
 					<label for="sure" class="fp3">确认密码：</label>
-					<input type="password" id="sure">
+					<input type="password" name="password" id="sure">
 				</p>
 				<p>
 					

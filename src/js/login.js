@@ -14,7 +14,7 @@
 				success:function(res){
 					if(res === 'ok'){
 						// alert(666);
-						location.href = '../index.html';
+						location.href = '../index.html?username='+$username;
 					}else{
 						alert('用户名或密码错误，请重新输入');
 						$(':input').val('');
