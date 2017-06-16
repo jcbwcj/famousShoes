@@ -1,31 +1,7 @@
 ;require(['config'],function(){
 	require(['jquery','validate','messages'],function($,validate,messages){
 		
-			$('form').validate({
-                // 验证规则
-                rules:{
-                    username:{
-                        required:true,
-                        rangelength:[10,12]
-                    },
-                	password:{
-                        required:true,
-                        rangelength:[6,12]
-                    }
-                },
-
-                // 自定义提示
-                messages:{
-                    username:{
-                        required:'*必填项'
-                    },
-                    password:{
-                        required:'*必填项'
-                    }
-                }
-            });
-
-
+		
 		// 阅读并同意必须勾选
 		var $checkbox = $(':checkbox');
 		var $btn = $('button');
@@ -38,14 +14,36 @@
 			}
 		});
 
-		
+		/*$('form').validate({
+            // 验证规则
+            rules:{
+                username:{
+                    required:true,
+                    rangelength:[6,12]
+                },
+            	password:{
+                    required:true,
+                    rangelength:[6,12]
+                }
+            },
 
+            // 自定义提示
+            messages:{
+                username:{
+                    required:'*必填项'
+                },
+                password:{
+                    required:'*必填项'
+                }
+            }
+        });*/
+		
 		// 点击提交传递信息到后台
 		$btn.on('click',function(){
+			console.log(666)
 			var $username = $('#username').val();
 			var $password = $('#password').val();
 			var $sure = $('#sure').val();
-
 			if($password != $sure){
 				$('#sure').val('');
 				$('#password').val('');
@@ -57,9 +55,9 @@
 				alert('用户名密码不能为空值');
 			}
 			else{
-
 				$.ajax({
 					url:'../api/signup.php',
+					type:'post',
 					data:{
 						username:$username,
 						password:$password
@@ -74,6 +72,7 @@
 					}
 				});
 			}
+			return false;
 
 		})
 	});

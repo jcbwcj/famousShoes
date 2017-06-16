@@ -2,10 +2,10 @@
 	// 引入与数据库连接
 	include 'connect.php';
 
-	$username = isset($_GET['username']) ? $_GET['username'] : '';
-	$password = isset($_GET['password']) ? $_GET['password'] : '';
+	$username = isset($_POST['username']) ? $_POST['username'] : '';
+	$password = isset($_POST['password']) ? $_POST['password'] : '';
 
-	/*// ------1.0版本------
+/*	// ------1.0版本------
 	// SQL语句
 	$sql = "select username from usermsg";
 
@@ -28,7 +28,22 @@
 	// print_r($arr[2]);
 	if(in_array($username, $arr)){
 		echo '已经存在';
-	}else{xxx...};*/
+	}else{
+		// md5加密
+		$password = md5($password);
+
+		$sql = "insert into usermsg	(username,password) values('$username','$password')";
+
+		// 获取查询结果
+		$res = $conn->query($sql);
+
+		if($res){
+			echo "ok";
+		}else{
+			echo "Error: " . $sql . "<br>" . $conn->error;
+		}	
+
+	};*/
 
 	// -------2.0版本--------
 	$sql = "select username from usermsg where username='$username'";
